@@ -9,7 +9,7 @@ The first thing to do is download the source data from the discord channel conta
 
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/fe23b0bb-3dfe-4621-a9e1-f97e6bd5c86e)
 
-## Step two: Extracting the data
+## Step two: Preprocessing the data
 Now that we have our raw data, we need to transform it into a format we can feed to the model. DialoGpt must be fed each message as well as the seven previous messages for context. This is what [DiscordChatBotExtractData.ipynb]() will do for us.
 Before this however, we must first discover the ID of the specific user we want our bot to mimic. See [this guide](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) published by discord support on how to acquire that. 
 
