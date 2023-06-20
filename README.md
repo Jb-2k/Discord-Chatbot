@@ -29,5 +29,5 @@ Finally we are ready to deploy the model. Create a new project on [replit](https
 
 Next, create a new secret called DISCORD_BOT_TOKEN and set the value as the token generated in the previous step. After this, you should be able to run the replit project and start chatting to your model in discord!
 
-A note on costs: Because of the computational requirements of the model, you will have to purchase boosts for your replit project. The lowest tier boost is enough to run the small dialogpt model, this costs 20 replit cycles a day, about 20 US cents. You can also pay a further 20 cycles a day to have your project always on, so the bot will be active 24/7
+**Note on costs**: Because of the computational requirements of the model, you will have to purchase boosts for your replit project. The lowest tier boost is enough to run the small dialogpt model, this costs 20 replit cycles a day, about 20 US cents. You can also pay a further 20 cycles a day to have your project always on, so the bot will be active 24/7
 
