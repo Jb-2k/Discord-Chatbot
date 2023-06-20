@@ -1,5 +1,5 @@
 # Discord-Chatbot
-Instructions for creating a discord chatbot that will mimic the responses of the user you train it on
+Instructions for creating a discord chatbot that will mimic the responses of the user you train it on, costing around 20¢ a day
 
 This code uses Microsoft's pretrained [Dialo-GPT-small](https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/) model.
 
