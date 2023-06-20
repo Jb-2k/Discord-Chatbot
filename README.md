@@ -1,5 +1,8 @@
 # Discord-Chatbot
-Code and instructions for creating your own chatbot trained on data from discord conversations and deploying it as a discord chatbot using [replt](https://replit.com/~) . This code uses Microsoft's pretrained [Dialo-GPT-small](https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/) model.
+Instructions for creating a discord chatbot that will mimic the responses of the user you train it on
+
+This code uses Microsoft's pretrained [Dialo-GPT-small](https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/) model.
+
 
 ## Step one: Acquiring the data
 The first thing to do is download the source data from the discord channel containing messages you want to use. For this I recommend using [Discord Chat Exporter](https://github.com/Tyrrrz/DiscordChatExporter) . Just click on the channel you want and download as a JSON. The more messages you have to work with, the better the bot will perform.
@@ -19,12 +22,15 @@ Then run the notebook. Once it is finished, you should see a csv file at the pat
 
 ## Step three: Training the model and uploading to HuggingFace🤗
 Now we are ready to train our model. Open [DiscordChatBotTraining.ipynb]() and set DATA_PATH to the csv file produced by the last step and run the notebook. 
+
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/8e29659f-ae94-46a4-aaf3-bc791789f7f3)
 
 Training on a GPU will be much faster, using the free tier of GPUs available on google collab training will take less than an hour, depending on how much data you have.
+
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/1dc62539-e5e0-4fa6-8873-4c2811855042)
 
 After we have trained our model, we want to upload it to huggingface🤗, you will have to login to huggingface using the cli. Change model_name to anything you like, this will be what the model is called on huggingface 
+
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/9a627132-a373-4e0b-a056-85c393097301)
 
 
@@ -34,9 +40,18 @@ Now we have a trained model we need to create a discord bot account to send and 
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/1ac7b2cb-4d73-4712-86b3-c0b0a04f17a1)
 
 ## Step five: Deploying the model
-Finally we are ready to deploy the model. Create a new project on [replit](https://replit.com/~). Copy the contents of [ChatBot.py]() into a new replit project. Change MODEL_NAME to the name of the model we uploaded to huggingface.
+Finally we are ready to deploy the model. Create a new project on [replit](https://replit.com/~)
 
-Next, create a new [secret](https://docs.replit.com/programming-ide/workspace-features/secrets) called DISCORD_BOT_TOKEN and set the value as the token generated in the previous step. After this, you should be able to run the replit project and start chatting to your model in discord!
+![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/6b6ee5d3-0f43-41ed-b139-a0af40085b06)
+
+Upload [ChatBot.py]() to it. Change MODEL_NAME to the name of the model we uploaded to huggingface.
+
+Next, create a new [secret](https://docs.replit.com/programming-ide/workspace-features/secrets) called DISCORD_BOT_TOKEN and set the value as the token generated in the previous step. This is very important as anyone with access to this unique token will have control of your bot, so you want to keep it seperate from your .py file, which will be publicly accessible.
+
+![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/d0a31e9c-1e7a-49b7-a225-3c722d2f69c8)
+
+
+After this, you should be able to run the replit project and start chatting to your model in discord!
 
 **Note on costs**: Because of the computational requirements of the model, you will have to purchase boosts for your replit project. The lowest tier boost is enough to run the small dialogpt model, this costs 20 replit cycles a day, about 20 US cents. You can also pay a further 20 cycles a day to have your project always on, so the bot will be active 24/7
 
