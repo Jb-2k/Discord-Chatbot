@@ -1,3 +1,4 @@
+
 # Discord-Chatbot
 Instructions for creating a discord chatbot that will mimic the responses of the user you train it on, costing around 20¢ a day to run
 
@@ -67,4 +68,5 @@ After you press run and the model is loaded, you should be able to start chattin
 As you can see, the bot responds pretty quickly!
 
 Feel free to edit the code in Replit, you can make the bot only respond when mentioned, send emojis or even gifs!
+
 
