@@ -49,7 +49,7 @@ Finally we are ready to deploy the model. Create a new project on [replit](https
 
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/6b6ee5d3-0f43-41ed-b139-a0af40085b06)
 
-Upload [ChatBot.py]() to it. Change MODEL_NAME to the name of the model we uploaded to huggingface.
+Upload [ChatBot.py](https://github.com/Jb-2k/Discord-Chatbot/blob/dev/ChatBot.py) to it. Change MODEL_NAME to the name of the model we uploaded to huggingface.
 
 Next, create a new [secret](https://docs.replit.com/programming-ide/workspace-features/secrets) called DISCORD_BOT_TOKEN and set the value as the token generated in the previous step. This is very important as anyone with access to this unique token will have control of your bot, so you want to keep it seperate from your .py file, which will be publicly accessible.
 
