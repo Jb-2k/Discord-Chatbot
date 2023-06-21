@@ -1,7 +1,7 @@
 # Discord-Chatbot
 Instructions for creating a discord chatbot that will mimic the responses of the user you train it on, costing around 20¢ a day
 
-This code uses Microsoft's pretrained [Dialo-GPT-small](https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/) model.
+This project uses Microsoft's pretrained [Dialo-GPT-small](https://www.microsoft.com/en-us/research/project/large-scale-pretraining-for-response-generation/) model, [HuggingFace🤗](https://huggingface.co/) for model hosting, and [Replit](https://replit.com/~) for live inference.
 
 
 ## Step one: Acquiring the data
@@ -53,5 +53,8 @@ Next, create a new [secret](https://docs.replit.com/programming-ide/workspace-fe
 
 After this, you should be able to run the replit project and start chatting to your model in discord!
 
-**Note on costs**: Because of the computational requirements of the model, you will have to purchase boosts for your replit project. The lowest tier boost is enough to run the small dialogpt model, this costs 20 replit cycles a day, about 20 US cents. You can also pay a further 20 cycles a day to have your project always on, so the bot will be active 24/7
+**Note on costs**: Because of the computational requirements of the model, you will have to purchase boosts for your replit project. The lowest tier boost is enough to run the small dialogpt model, this costs 20 replit cycles a day, about 20 US cents. You can also pay a further 20 cycles a day to have your project always on, so the bot will be active 24/7, even when it is not running in your browser
+
+![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/a6104ba1-4ffd-4efd-8a3b-20b9ee37c555)
+
 
