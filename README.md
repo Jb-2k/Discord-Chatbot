@@ -13,10 +13,10 @@ The first thing to do is download the source data from the discord channel conta
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/fe23b0bb-3dfe-4621-a9e1-f97e6bd5c86e)
 
 ## Step two: Preprocessing the data
-Now that we have our raw data, we need to transform it into a format we can feed to the model. This is what [DiscordChatBotExtractData.ipynb]() will do for us.
+Now that we have our raw data, we need to transform it into a format we can feed to the model. This is what [DataPreprocessing.ipynb](https://github.com/Jb-2k/Discord-Chatbot/blob/dev/DataPreprocessing.ipynb) will do for us.
 Before this however, we must first discover the ID of the specific user we want our bot to mimic. See [this guide](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) published by discord support on how to acquire that. 
 
-Once you have this ID, paste the value into the USER_ID field at the top of [DiscordChatBotExtractData.ipynb](), along with the path to the raw channel data JSON file from the previous step, and a path where you want to output the training file.
+Once you have this ID, paste the value into the USER_ID field at the top of [DataPreprocessing.ipynb](https://github.com/Jb-2k/Discord-Chatbot/blob/dev/DataPreprocessing.ipynb), along with the path to the raw channel data JSON file from the previous step, and a path where you want to output the training file.
 
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/0d49d1b9-dbde-402b-aa8f-f44a84f28a64)
 
@@ -24,7 +24,7 @@ Once you have this ID, paste the value into the USER_ID field at the top of [Dis
 Then run the notebook. Once it is finished, you should see a csv file at the path you specified in OUTPUT_PATH. This is the file we will use for model training
 
 ## Step three: Training the model and uploading to HuggingFace🤗
-Now we are ready to train our model. Open [DiscordChatBotTraining.ipynb]() and set DATA_PATH to the csv file produced by the last step. 
+Now we are ready to train our model. Open [Training.ipynb](https://github.com/Jb-2k/Discord-Chatbot/blob/dev/Training.ipynb) and set DATA_PATH to the csv file produced by the last step. 
 
 ![image](https://github.com/Jb-2k/Discord-Chatbot/assets/91644188/8e29659f-ae94-46a4-aaf3-bc791789f7f3)
 
